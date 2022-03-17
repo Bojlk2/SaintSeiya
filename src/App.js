@@ -44,7 +44,10 @@ function App() {
           <div className="col-12 col-mb-6">
             <div className="row py-3">
               {Object.keys(saint).map(saintS => {
-                return <SaintCard saintData={saint[saintS]}  handlers={{deleteSaint}} />
+                return <SaintCard
+                          key={saintS}
+                          saintData={saint[saintS]}
+                          handlers={{deleteSaint}} />
               })}
             </div>
           </div>

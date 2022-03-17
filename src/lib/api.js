@@ -20,8 +20,7 @@ export default {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(saintData)
+            }
         })
         return await response.json()
     }
